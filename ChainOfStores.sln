@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfStores", "ChainOfStores\ChainOfStores.csproj", "{9CC2FF44-EFCC-4B2A-88A4-91597A3E30AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfStores.Model", "ChainOfStores.Model\ChainOfStores.Model.csproj", "{CABB3750-4491-4E2A-96CB-9CDC5B0126CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CC2FF44-EFCC-4B2A-88A4-91597A3E30AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC2FF44-EFCC-4B2A-88A4-91597A3E30AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC2FF44-EFCC-4B2A-88A4-91597A3E30AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC2FF44-EFCC-4B2A-88A4-91597A3E30AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CABB3750-4491-4E2A-96CB-9CDC5B0126CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABB3750-4491-4E2A-96CB-9CDC5B0126CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CABB3750-4491-4E2A-96CB-9CDC5B0126CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CABB3750-4491-4E2A-96CB-9CDC5B0126CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B52F309-AC02-4792-87CB-5E42D4D2380A}
+	EndGlobalSection
+EndGlobal
