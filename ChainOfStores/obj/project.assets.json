@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "ChainOfStores.Console/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ChainOfStores.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ChainOfStores.Console.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ChainOfStores.Console.dll": {}
+        }
+      },
       "ChainOfStores.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "ChainOfStores.Console/1.0.0": {
+      "type": "project",
+      "path": "../ChainOfStores.ConsoleView/ChainOfStores.Console.csproj",
+      "msbuildProject": "../ChainOfStores.ConsoleView/ChainOfStores.Console.csproj"
+    },
     "ChainOfStores.Model/1.0.0": {
       "type": "project",
       "path": "../ChainOfStores.Model/ChainOfStores.Model.csproj",
@@ -23,7 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "ChainOfStores.Model >= 1.0.0"
+      "ChainOfStores.Console >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -53,8 +71,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Lenovo\\source\\repos\\ChainOfStores\\ChainOfStores.Model\\ChainOfStores.Model.csproj": {
-              "projectPath": "C:\\Users\\Lenovo\\source\\repos\\ChainOfStores\\ChainOfStores.Model\\ChainOfStores.Model.csproj"
+            "C:\\Users\\Lenovo\\source\\repos\\ChainOfStores\\ChainOfStores.ConsoleView\\ChainOfStores.Console.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\source\\repos\\ChainOfStores\\ChainOfStores.ConsoleView\\ChainOfStores.Console.csproj"
             }
           }
         }
@@ -83,7 +101,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

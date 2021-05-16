@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChainOfStores.Console;
+using System;
 
 namespace ChainOfStores
 {
@@ -6,7 +7,8 @@ namespace ChainOfStores
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ConsoleView consoleView = new ConsoleView();
+            consoleView.Run();
         }
     }
 }

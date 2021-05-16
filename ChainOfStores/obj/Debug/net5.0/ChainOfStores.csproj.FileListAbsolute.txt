@@ -14,3 +14,8 @@ C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores\obj\Debug\net5.0\ChainO
 C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores\obj\Debug\net5.0\ref\ChainOfStores.dll
 C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores\obj\Debug\net5.0\ChainOfStores.pdb
 C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores\obj\Debug\net5.0\ChainOfStores.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores\bin\Debug\net5.0\ChainOfStores.Console.dll
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores\bin\Debug\net5.0\ChainOfStores.Model.dll
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores\bin\Debug\net5.0\ChainOfStores.Console.pdb
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores\bin\Debug\net5.0\ChainOfStores.Model.pdb
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores\obj\Debug\net5.0\ChainOfStores.csproj.CopyComplete

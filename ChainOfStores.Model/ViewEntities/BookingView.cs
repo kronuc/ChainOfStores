@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChainOfStores.Model.DataTransferObjects
+namespace ChainOfStores.Model.ViewEntities
 {
-    class BookingDTO
+    class BookingView
     {
         public Guid Id { get; set; }
         public DateTime DataOfBooking { get; set; }

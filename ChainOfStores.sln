@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfStores", "ChainOfStores\ChainOfStores.csproj", "{9CC2FF44-EFCC-4B2A-88A4-91597A3E30AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfStores.Model", "ChainOfStores.Model\ChainOfStores.Model.csproj", "{CABB3750-4491-4E2A-96CB-9CDC5B0126CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfStores.Model", "ChainOfStores.Model\ChainOfStores.Model.csproj", "{CABB3750-4491-4E2A-96CB-9CDC5B0126CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfStores.Console", "ChainOfStores.ConsoleView\ChainOfStores.Console.csproj", "{30754D09-5D93-4B4D-A67B-2A426F55361B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CABB3750-4491-4E2A-96CB-9CDC5B0126CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CABB3750-4491-4E2A-96CB-9CDC5B0126CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CABB3750-4491-4E2A-96CB-9CDC5B0126CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30754D09-5D93-4B4D-A67B-2A426F55361B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30754D09-5D93-4B4D-A67B-2A426F55361B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30754D09-5D93-4B4D-A67B-2A426F55361B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30754D09-5D93-4B4D-A67B-2A426F55361B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

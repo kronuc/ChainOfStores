@@ -1,0 +1,12 @@
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ChainOfStores.Model.deps.json
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ChainOfStores.Model.dll
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ref\ChainOfStores.Model.dll
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ChainOfStores.Model.pdb
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.dll
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ref\ChainOfStores.Model.dll
+C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.pdb

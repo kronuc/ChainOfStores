@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ChainOfStores.Console/1.0.0": {
+        "dependencies": {
+          "ChainOfStores.Model": "1.0.0"
+        },
+        "runtime": {
+          "ChainOfStores.Console.dll": {}
+        }
+      },
+      "ChainOfStores.Model/1.0.0": {
+        "runtime": {
+          "ChainOfStores.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ChainOfStores.Console/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ChainOfStores.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
