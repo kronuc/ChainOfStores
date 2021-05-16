@@ -1,4 +1,6 @@
-﻿using ChainOfStores.Console;
+﻿using ChainOfStores.ConsoleView;
+using ChainOfStores.Model.Services.Interfaces;
+using ChainOfStores.Model.Services.Realization.WhitoutDB;
 using System;
 
 namespace ChainOfStores
@@ -7,8 +9,12 @@ namespace ChainOfStores
     {
         static void Main(string[] args)
         {
-            ConsoleView consoleView = new ConsoleView();
-            consoleView.Run();
+            IBookingService bookingService = new BookingServiceWithoutDB();
+            IProductTypeService productTypeService = new ProductTypeServiceWithoutDB();
+            IProductService productService = new ProductServiceWithoutDB();
+            IStoreService storeService = new StoreServiceWithoutDB();
+            MainMenuConsolePage mainMenuPage = new MainMenuConsolePage(bookingService, storeService, productService, productTypeService);
+            mainMenuPage.Run();
         }
     }
 }

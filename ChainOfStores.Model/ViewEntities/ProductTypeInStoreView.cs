@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.Model.ViewEntities
 {
-    class ProductTypeInStoreView
+    public class ProductTypeInStoreView
     {
         public int Id { get; set; }
         public int StoreId { get; set; }

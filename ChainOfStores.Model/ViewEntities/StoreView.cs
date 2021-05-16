@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.Model.ViewEntities
 {
-    class StoreView
+    public class StoreView
     {
         public int Id { get; set; }
         public string Name { get; set; }

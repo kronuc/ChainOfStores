@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.Model.Services.Interfaces
 {
-    interface IStoreService
+    public interface IStoreService
     {
         public IEnumerable<StoreView> GetAllStores();
         public StoreView GetStoreByID(int storeID);

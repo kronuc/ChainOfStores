@@ -8,11 +8,10 @@ using System.Threading.Tasks;
 namespace ChainOfStores.Model.Services.Interfaces
 {
     
-    interface IBookingService
+    public interface IBookingService
     {
-         public void MakeBooking(int productID, int storeId, DateTime dataOfBooking);
+        public void MakeBooking(int productID, DateTime dataOfBooking);
         public IEnumerable<BookingView> GetAllBookings();
-        public IEnumerable<BookingView> GetAllBookingsInStore(int storeID);
         public void DeleteBooking(int bookingID);
         public BookingView GetBookingByID(int bookingID);
         public void EditBooking(BookingView editedBooking);

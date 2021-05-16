@@ -8,38 +8,41 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.Model.Services.Realization.WhitoutDB
 {
-    class BookingServiceWithoutDB : IBookingService
+    public class BookingServiceWithoutDB : IBookingService
     {
+        public static List<BookingView> Bookings;
         public void DeleteBooking(int bookingID)
         {
-            throw new NotImplementedException();
+            Bookings.Remove(Bookings.Where(booking => booking.Id == bookingID).First());
         }
 
         public void EditBooking(BookingView editedBooking)
         {
-            throw new NotImplementedException();
+            BookingView oldBooking = GetBookingByID(editedBooking.Id);
+            oldBooking.ProductID = editedBooking.ProductID;
+            oldBooking.DataOfBooking = editedBooking.DataOfBooking;
         }
 
         public IEnumerable<BookingView> GetAllBookings()
         {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<BookingView> GetAllBookingsInStore(int storeID)
-        {
-            throw new NotImplementedException();
+            return Bookings.ToList();
         }
 
         public BookingView GetBookingByID(int bookingID)
         {
-            throw new NotImplementedException();
+            return Bookings.Where(booking => booking.Id == bookingID).First();
         }
 
-        public void MakeBooking(int productID, int storeId, DateTime dataOfBooking)
+        public void MakeBooking(int productID, DateTime dataOfBooking)
         {
-            throw new NotImplementedException();
+            Bookings.Add(new BookingView() 
+            { 
+                ProductID = productID, 
+                DataOfBooking = dataOfBooking, 
+                Id = Bookings.Last().Id + 1 
+            });
         }
-        private void InitialiseData()
+        private static void InitialiseData()
         { }
     }
 }

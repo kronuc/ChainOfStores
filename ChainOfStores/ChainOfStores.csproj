@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ChainOfStores.ConsoleView\ChainOfStores.Console.csproj" />
+    <ProjectReference Include="..\ChainOfStores.ConsoleView\ChainOfStores.ConsoleView.csproj" />
   </ItemGroup>
 
 </Project>

@@ -10,3 +10,15 @@ C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\
 C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.dll
 C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ref\ChainOfStores.Model.dll
 C:\Users\Lenovo\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.pdb
+C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ChainOfStores.Model.deps.json
+C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ChainOfStores.Model.dll
+C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ref\ChainOfStores.Model.dll
+C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ChainOfStores.Model.pdb
+C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.csprojAssemblyReference.cache
+C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.AssemblyInfoInputs.cache
+C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.AssemblyInfo.cs
+C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.csproj.CoreCompileInputs.cache
+C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.dll
+C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ref\ChainOfStores.Model.dll
+C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.pdb

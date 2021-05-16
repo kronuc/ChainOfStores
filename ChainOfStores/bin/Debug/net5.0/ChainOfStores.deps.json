@@ -8,18 +8,18 @@
     ".NETCoreApp,Version=v5.0": {
       "ChainOfStores/1.0.0": {
         "dependencies": {
-          "ChainOfStores.Console": "1.0.0"
+          "ChainOfStores.ConsoleView": "1.0.0"
         },
         "runtime": {
           "ChainOfStores.dll": {}
         }
       },
-      "ChainOfStores.Console/1.0.0": {
+      "ChainOfStores.ConsoleView/1.0.0": {
         "dependencies": {
           "ChainOfStores.Model": "1.0.0"
         },
         "runtime": {
-          "ChainOfStores.Console.dll": {}
+          "ChainOfStores.ConsoleView.dll": {}
         }
       },
       "ChainOfStores.Model/1.0.0": {
@@ -35,7 +35,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ChainOfStores.Console/1.0.0": {
+    "ChainOfStores.ConsoleView/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
