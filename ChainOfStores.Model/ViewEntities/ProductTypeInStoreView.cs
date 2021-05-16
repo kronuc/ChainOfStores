@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.Model.ViewEntities
 {
-    class ProductTypeView
+    class ProductTypeInStoreView
     {
         public int Id { get; set; }
-        public DateTime ExpirationDate { get; set; }
-        public string Name { get; set; }
-        public float Price { get; set; }
+        public int StoreId { get; set; }
+        public int ProductTypeId { get; set; }
     }
 }

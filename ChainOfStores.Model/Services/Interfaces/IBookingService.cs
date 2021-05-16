@@ -10,10 +10,11 @@ namespace ChainOfStores.Model.Services.Interfaces
     
     interface IBookingService
     {
-         public void MakeBooking(Guid productID, Guid storeId, DateTime dataOfBooking);
+         public void MakeBooking(int productID, int storeId, DateTime dataOfBooking);
         public IEnumerable<BookingView> GetAllBookings();
-        public IEnumerable<BookingView> GetAllBookingsInStore(Guid storeID);
-        public void DeleteBookin(Guid bookingID);
-        public BookingView GetBookingByID(Guid bookingID);
+        public IEnumerable<BookingView> GetAllBookingsInStore(int storeID);
+        public void DeleteBooking(int bookingID);
+        public BookingView GetBookingByID(int bookingID);
+        public void EditBooking(BookingView editedBooking);
     }
 }

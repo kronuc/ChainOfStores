@@ -10,11 +10,11 @@ namespace ChainOfStores.Model.Services.Interfaces
     interface IProductService
     {
         public IEnumerable<ProductView> GetAllProducts();
-        public ProductView GetProductByID(Guid productID);
-        public IEnumerable<ProductView> GetAllProductsWithThisProductType(Guid productTypeID);
-        public void CreateProduct(ProductView newProduct);
-        public void EditProductGuid(ProductView editedProduct);
-        public void DeleteProduct(Guid productID);
-        public IEnumerable<ProductView> GetAllProductsInStore(Guid storeID);
+        public ProductView GetProductByID(int productID);
+        public IEnumerable<ProductView> GetAllProductsWithThisProductType(int productTypeID);
+        //public void CreateProduct(ProductView newProduct);
+        //public void EditProductint(ProductView editedProduct);
+        //public void DeleteProduct(int productID);
+        public IEnumerable<ProductView> GetAllProductsInStore(int storeID);
     }
 }

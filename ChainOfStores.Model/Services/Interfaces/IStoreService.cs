@@ -10,10 +10,7 @@ namespace ChainOfStores.Model.Services.Interfaces
     interface IStoreService
     {
         public IEnumerable<StoreView> GetAllStores();
-        public StoreView GetStoreByID(Guid storeID);
-        public void CreateStore(StoreView newStore);
-        public void DeleteStore(Guid storeID);
-        public void EditStore(StoreView editedStore);
-        public IEnumerable<StoreView> GetAllStoresThatConteainThisTypeOfProduct(Guid typeOfProductID);
+        public StoreView GetStoreByID(int storeID);
+        public IEnumerable<StoreView> GetAllStoresThatConteainThisTypeOfProduct(int typeOfProductID);
     }
 }

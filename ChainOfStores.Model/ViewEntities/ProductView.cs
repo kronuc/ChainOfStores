@@ -8,10 +8,10 @@ namespace ChainOfStores.Model.ViewEntities
 {
     class ProductView
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public float Price { get; set; }
-        public Guid ProductTypeId { get; set; }
-        public Guid StoreID { get; set; }
+        public int ProductTypeId { get; set; }
+        public int StoreID { get; set; }
         public DateTime DateOfProducing { get; set; }
         public DateTime ExpirationDate { get; set; }
     }

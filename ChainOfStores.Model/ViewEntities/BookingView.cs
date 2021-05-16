@@ -8,10 +8,10 @@ namespace ChainOfStores.Model.ViewEntities
 {
     class BookingView
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public DateTime DataOfBooking { get; set; }
         public DateTime DataOfBookingEnd { get; set; }
-        public Guid StoreID { get; set; }
-        public Guid ProductID { get; set; }
+        public int StoreID { get; set; }
+        public int ProductID { get; set; }
     }
 }
