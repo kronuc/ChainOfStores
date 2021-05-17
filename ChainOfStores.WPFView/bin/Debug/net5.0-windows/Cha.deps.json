@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Cha/1.0.0": {
+        "dependencies": {
+          "ChainOfStores.Model": "1.0.0"
+        },
+        "runtime": {
+          "Cha.dll": {}
+        }
+      },
+      "ChainOfStores.Model/1.0.0": {
+        "runtime": {
+          "ChainOfStores.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cha/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ChainOfStores.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

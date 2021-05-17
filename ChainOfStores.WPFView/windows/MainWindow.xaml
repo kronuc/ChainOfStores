@@ -1,0 +1,130 @@
+﻿<Window x:Class="Cha.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cha"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TabControl x:Name="Products" Grid.Row="0" Grid.ColumnSpan="2">
+            <TabItem x:Name="ProductType">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">product types</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <ListView x:Name="ViewProductTypes" Grid.Row="0">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Id" Width="30"/>
+                                    <GridViewColumn Header="Name" Width="300"/>
+                                    <GridViewColumn Header="Extermination Date" Width="150"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                        <CheckBox x:Name="cbShowTypesInSelectedStore" Grid.Row="2" IsThreeState="True" IsChecked="False" Height="20" Content="show types in selected store" />
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="Store">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">stores</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <ListView x:Name="ViewStores" Grid.Row="0">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Id" Width="30"/>
+                                    <GridViewColumn Header="Name" Width="150"/>
+                                    <GridViewColumn Header="City" Width="150"/>
+                                    <GridViewColumn Header="Country" Width="150"/>
+                                    <GridViewColumn Header="Address" Width="300"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                        <CheckBox x:Name="cbShowStoresWithSelectedType" Grid.Row="2" IsThreeState="True" IsChecked="False" Height="20" Content="show stores with selected type"/>
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="Product">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">products</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <ListView x:Name="ViewProducts" Grid.Row="0" Grid.ColumnSpan="2">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Id" Width="50"/>
+                                    <GridViewColumn Header="Type Id" Width="150"/>
+                                    <GridViewColumn Header="Store Id" Width="150"/>
+                                    <GridViewColumn Header="Producing date" Width="150"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                        <CheckBox x:Name="cbShowProductsInSelectedStore" Grid.Row="2" Grid.Column="0" IsThreeState="True" IsChecked="False" Height="20" Content="show products in selected store" />
+                        <CheckBox x:Name="cbShowProductsWithSelectedType" Grid.Row="2" Grid.Column="1" IsThreeState="True" IsChecked="False" Height="20" Content="show products with selected type"/>
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="Booking">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">bookings</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <ListView x:Name="ViewBookings" Grid.Row="0" Grid.ColumnSpan="2">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Id" Width="50"/>
+                                <GridViewColumn Header="Product Id" Width="150"/>
+                                <GridViewColumn Header="Date of booking" Width="150"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </TabItem.Content>
+            </TabItem>
+        </TabControl>
+        <Button x:Name="bMakeBooking" Width="200"  Grid.Row="2" Grid.Column="0" Content="make booking"/>
+        <Button x:Name="bDeletebooking" Width="200"  Grid.Row="2" Grid.Column="1" Content="delete booking"/>
+        </Grid>
+</Window>
