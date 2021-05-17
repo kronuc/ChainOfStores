@@ -10,17 +10,11 @@ namespace ChainOfStores.ConsoleView
 {
     class StoreConsolePage
     {
-        private IBookingService _bookingService;
         private IStoreService _storeService;
-        private IProductService _productService;
-        private IProductTypeService _productTypeService;
         private SelectedItems _selectedItems;
-        public StoreConsolePage(IBookingService bookingService, IStoreService storeService, IProductService productService, IProductTypeService productTypeService, SelectedItems selectedItems)
+        public StoreConsolePage( IStoreService storeService,  SelectedItems selectedItems)
         {
-            _bookingService = bookingService;
             _storeService = storeService;
-            _productService = productService;
-            _productTypeService = productTypeService;
             _selectedItems = selectedItems;
         }
 

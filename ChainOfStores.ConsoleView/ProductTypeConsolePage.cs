@@ -105,7 +105,7 @@ namespace ChainOfStores.ConsoleView
 
         private void WriteListOfProductTypes(List<ProductTypeView> productTypes)
         {
-            Console.WriteLine("     product name        price");
+            Console.WriteLine("     product type name   price");
             foreach (ProductTypeView productType in productTypes)
             {
                 Console.WriteLine($"{productType.Id,5}{productType.Name,-20}{productType.Price.ToString()}");

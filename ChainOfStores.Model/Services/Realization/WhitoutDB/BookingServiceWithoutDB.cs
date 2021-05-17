@@ -11,16 +11,19 @@ namespace ChainOfStores.Model.Services.Realization.WhitoutDB
     public class BookingServiceWithoutDB : IBookingService
     {
         public static List<BookingView> Bookings;
+
+        public BookingServiceWithoutDB()
+        {
+        }
+        static BookingServiceWithoutDB()
+        {
+            Bookings = new List<BookingView>();
+            InitialiseData();
+        }
+
         public void DeleteBooking(int bookingID)
         {
             Bookings.Remove(Bookings.Where(booking => booking.Id == bookingID).First());
-        }
-
-        public void EditBooking(BookingView editedBooking)
-        {
-            BookingView oldBooking = GetBookingByID(editedBooking.Id);
-            oldBooking.ProductID = editedBooking.ProductID;
-            oldBooking.DataOfBooking = editedBooking.DataOfBooking;
         }
 
         public IEnumerable<BookingView> GetAllBookings()
@@ -30,7 +33,7 @@ namespace ChainOfStores.Model.Services.Realization.WhitoutDB
 
         public BookingView GetBookingByID(int bookingID)
         {
-            return Bookings.Where(booking => booking.Id == bookingID).First();
+            return Bookings.Where(booking => booking.Id == bookingID).FirstOrDefault();
         }
 
         public void MakeBooking(int productID, DateTime dataOfBooking)
@@ -39,7 +42,6 @@ namespace ChainOfStores.Model.Services.Realization.WhitoutDB
             { 
                 ProductID = productID, 
                 DataOfBooking = dataOfBooking, 
-                Id = Bookings.Last().Id + 1 
             });
         }
         private static void InitialiseData()

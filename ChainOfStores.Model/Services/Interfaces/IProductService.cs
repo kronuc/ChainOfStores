@@ -11,7 +11,9 @@ namespace ChainOfStores.Model.Services.Interfaces
     {
         public IEnumerable<ProductView> GetAllProducts();
         public ProductView GetProductByID(int productID);
-        public IEnumerable<ProductView> GetAllProductsWithThisProductType(int productTypeID);
+        public IEnumerable<ProductView> GetAllProductsWithSelectedProductType(int productTypeID);
         public IEnumerable<ProductView> GetAllProductsInStore(int storeID);
+        public IEnumerable<ProductView> GetAllProductsWithSelectedProductTypeAndStore(int productTypeID, int storeId);
+        public bool DoesProductAvailable(int productId);
     }
 }

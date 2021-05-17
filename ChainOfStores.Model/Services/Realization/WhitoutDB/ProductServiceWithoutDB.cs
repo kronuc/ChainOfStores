@@ -31,7 +31,7 @@ namespace ChainOfStores.Model.Services.Realization.WhitoutDB
             return Products.Where(product => product.StoreID == storeID);
         }
 
-        public IEnumerable<ProductView> GetAllProductsWithThisProductType(int productTypeID)
+        public IEnumerable<ProductView> GetAllProductsWithSelectedProductType(int productTypeID)
         {
             return Products.Where(product => product.ProductTypeId == productTypeID);
         }
@@ -43,8 +43,14 @@ namespace ChainOfStores.Model.Services.Realization.WhitoutDB
 
         public bool DoesProductAvailable(int productId)
         {
-            return BookingServiceWithoutDB.Bookings.Where(booking => booking.ProductID == productId).FirstOrDefault(null) == null;
+            return !BookingServiceWithoutDB.Bookings.Where(booking => booking.ProductID == productId).Any();
         }
+
+        public IEnumerable<ProductView> GetAllProductsWithSelectedProductTypeAndStore(int productTypeID, int storeId)
+        {
+            return Products.Where(product => product.StoreID == storeId).Where(product => product.ProductTypeId == productTypeID);
+        }
+
         private static void InitialiseData()
         {
             Products.Add(new ProductView() { Id = 1, ProductTypeId = 1, StoreID = 1, DateOfProducing = new DateTime()});
@@ -93,5 +99,6 @@ namespace ChainOfStores.Model.Services.Realization.WhitoutDB
             Products.Add(new ProductView() { Id = 44, ProductTypeId = 1, StoreID = 5, DateOfProducing = new DateTime()});
             Products.Add(new ProductView() { Id = 45, ProductTypeId = 1, StoreID = 5, DateOfProducing = new DateTime()});
         }
+
     }
 }

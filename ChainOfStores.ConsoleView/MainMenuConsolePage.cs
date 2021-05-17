@@ -17,6 +17,8 @@ namespace ChainOfStores.ConsoleView
 
         private ProductTypeConsolePage _productTypePage;
         private StoreConsolePage _storePage;
+        private ProductConsolePage _productPage;
+        private BookingConsolePage _bookingPage;
         
         private SelectedItems _selectedItems;
 
@@ -26,10 +28,13 @@ namespace ChainOfStores.ConsoleView
             _storeService = storeService;
             _productService = productService;
             _productTypeService = productTypeService;
+            
             _selectedItems = new SelectedItems();
-            _storePage = new StoreConsolePage(bookingService, storeService, productService, productTypeService, _selectedItems);
-            _productTypePage = new ProductTypeConsolePage(productTypeService, _selectedItems);
 
+            _storePage = new StoreConsolePage(storeService, _selectedItems);
+            _productTypePage = new ProductTypeConsolePage(productTypeService, _selectedItems);
+            _productPage = new ProductConsolePage(productService, _selectedItems);
+            _bookingPage = new BookingConsolePage(bookingService, storeService, productService, productTypeService, _selectedItems);
         }
 
         public void Run()
@@ -81,11 +86,11 @@ namespace ChainOfStores.ConsoleView
             }
             else if (command == "3")
             {
-
+                _productPage.Run();
             }
             else if (command == "4")
             {
-
+                _bookingPage.Run();
             }
             else if (command == "5")
             {
