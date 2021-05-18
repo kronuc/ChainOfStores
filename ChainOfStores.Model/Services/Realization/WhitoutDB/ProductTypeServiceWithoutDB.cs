@@ -10,49 +10,39 @@ namespace ChainOfStores.Model.Services.Realization.WhitoutDB
 {
     public class ProductTypeServiceWithoutDB : IProductTypeService
     {
-        static List<ProductTypeView> ProductTypes;
+        private List<ProductTypeView> _productTypes;
 
         public ProductTypeServiceWithoutDB()
         {
-        }
-
-        static ProductTypeServiceWithoutDB()
-        {
-            ProductTypes = new List<ProductTypeView>();
+            _productTypes = new List<ProductTypeView>();
             InitialiseData();
         }
 
+
         public IEnumerable<ProductTypeView> GetAllProductTypes()
         {
-            return ProductTypes.ToList();
+            return _productTypes.ToList();
         }
 
-        public IEnumerable<ProductTypeView> GetAllProductTypesInStore(int storeID)
-        {
-            List<int> typesId = StoreServiceWithoutDB.ProductTypesInStores
-                .Where(typeInStore => typeInStore.StoreId == storeID)
-                .Select(typeInStore => typeInStore.ProductTypeId)
-                .ToList();
-            return ProductTypes.Where(type => typesId.Contains(type.Id));
-        }
 
         public ProductTypeView GetProductTypeByID(int productTypeId)
         {
-            return ProductTypes.Where(type => type.Id == productTypeId).First();
+            return _productTypes.Where(type => type.Id == productTypeId).First();
+        }
+        public IEnumerable<ProductTypeView> FindByName(string name)
+        {
+            return _productTypes.Where(type => type.Name.Contains(name ?? ""));
         }
 
-        public ProductTypeView GetTypeOfThisProduct(int productID)
+        private void InitialiseData()
         {
-            ProductView product = ProductServiceWithoutDB.Products.Where(product => product.Id == productID).First();
-            return ProductTypes.Where(type => type.Id == product.Id).First();
+            _productTypes.Add(new ProductTypeView() { Id = 1, Name = "product type 1", PriceRecomendation = 15.23f, ExpirationDate = 14 });
+            _productTypes.Add(new ProductTypeView() { Id = 2, Name = "product type 2", PriceRecomendation = 16.0f, ExpirationDate = 140 });
+            _productTypes.Add(new ProductTypeView() { Id = 3, Name = "product type 3", PriceRecomendation = 900.2f, ExpirationDate = 2 });
+            _productTypes.Add(new ProductTypeView() { Id = 4, Name = "product type 4", PriceRecomendation = 120.6f, ExpirationDate = 10 });
+            _productTypes.Add(new ProductTypeView() { Id = 5, Name = "product type 5", PriceRecomendation = 0.23f, ExpirationDate = 1000 });
         }
-        private static void InitialiseData()
-        {
-            ProductTypes.Add(new ProductTypeView() { Id = 1, Name = "product type 1", Price = 15.23f, ExpirationDate = 14 });
-            ProductTypes.Add(new ProductTypeView() { Id = 2, Name = "product type 2", Price = 16.0f, ExpirationDate = 140 });
-            ProductTypes.Add(new ProductTypeView() { Id = 3, Name = "product type 3", Price = 900.2f, ExpirationDate = 2 });
-            ProductTypes.Add(new ProductTypeView() { Id = 4, Name = "product type 4", Price = 120.6f, ExpirationDate = 10 });
-            ProductTypes.Add(new ProductTypeView() { Id = 5, Name = "product type 5", Price = 0.23f, ExpirationDate = 1000 });
-        }
+
+        
     }
 }

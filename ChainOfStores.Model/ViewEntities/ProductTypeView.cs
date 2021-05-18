@@ -11,6 +11,6 @@ namespace ChainOfStores.Model.ViewEntities
         public int Id { get; set; }
         public int ExpirationDate { get; set; }
         public string Name { get; set; }
-        public float Price { get; set; }
+        public float PriceRecomendation { get; set; }
     }
 }

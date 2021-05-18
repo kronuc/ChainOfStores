@@ -10,41 +10,40 @@ namespace ChainOfStores.Model.Services.Realization.WhitoutDB
 {
     public class BookingServiceWithoutDB : IBookingService
     {
-        public static List<BookingView> Bookings;
+        private List<BookingView> _bookings;
 
         public BookingServiceWithoutDB()
         {
-        }
-        static BookingServiceWithoutDB()
-        {
-            Bookings = new List<BookingView>();
-            InitialiseData();
+            _bookings = new List<BookingView>();
+
         }
 
         public void DeleteBooking(int bookingID)
         {
-            Bookings.Remove(Bookings.Where(booking => booking.Id == bookingID).First());
+            _bookings.Remove(_bookings.Where(booking => booking.Id == bookingID).First());
         }
 
         public IEnumerable<BookingView> GetAllBookings()
         {
-            return Bookings.ToList();
+            return _bookings.ToList();
         }
 
         public BookingView GetBookingByID(int bookingID)
         {
-            return Bookings.Where(booking => booking.Id == bookingID).FirstOrDefault();
+            return _bookings.Where(booking => booking.Id == bookingID).FirstOrDefault();
         }
 
         public void MakeBooking(int productID, DateTime dataOfBooking)
         {
-            Bookings.Add(new BookingView() 
+            _bookings.Add(new BookingView() 
             { 
                 ProductID = productID, 
                 DataOfBooking = dataOfBooking, 
             });
         }
-        private static void InitialiseData()
-        { }
+        public bool DoesProductAvailable(int productId)
+        {
+            return !_bookings.Where(booking => booking.ProductID == productId).Any();
+        }
     }
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BjtMRHQWbHQmH45N0fPEHU04iCfHrxCkOhj8CavlM0M6OvXItpJb2gwXsR84FK36N4HIGCBKV7VVeMrMy0fF8g==",
+  "dgSpecHash": "t2O8KphNlPzMyHQKMlhM15Dej0z32WkOx1p2PA9RSivwKWi63yPiIscQ8afkR3P4WdRzbUr3bUhyuJ0sHERi6w==",
   "success": true,
   "projectFilePath": "C:\\Users\\kronuc\\source\\repos\\ChainOfStores\\ChainOfStores.WPFView\\ChainOfStores.WPFView.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\kronuc\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512"
+  ],
   "logs": []
 }

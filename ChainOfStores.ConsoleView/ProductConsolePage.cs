@@ -12,10 +12,12 @@ namespace ChainOfStores.ConsoleView
     {
         private IProductService _productService;
         private SelectedItems _selectedItems;
-        public ProductConsolePage(IProductService productService, SelectedItems selectedItems)
+        private IBookingService _bookingService;
+        public ProductConsolePage(IProductService productService, IBookingService bookingService SelectedItems selectedItems)
         {
             _productService = productService;
             _selectedItems = selectedItems;
+            _bookingService = bookingService;
         }
 
 
@@ -77,7 +79,7 @@ namespace ChainOfStores.ConsoleView
             {
                 Console.WriteLine("\nWrong Id");
             }
-            else if (!_productService.DoesProductAvailable(productId))
+            else if (!_bookingService.DoesProductAvailable(productId))
             {
                 Console.WriteLine("product doesn`t available");
             }
@@ -140,7 +142,7 @@ namespace ChainOfStores.ConsoleView
             Console.WriteLine("id       type id    store id   date of producing");
             foreach (ProductView product in products)
             {
-                Console.WriteLine($"{product.Id,-8} {product.ProductTypeId,-10} {product.StoreID, -10} {product.DateOfProducing}");
+                Console.WriteLine($"{product.Id,-8} {product.ProductTypeId,-10} {product.StoreId, -10} {product.DateOfProducing}");
             }
         }
 

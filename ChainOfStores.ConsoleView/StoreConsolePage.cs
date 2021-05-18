@@ -40,9 +40,8 @@ namespace ChainOfStores.ConsoleView
         private void WriteListOfCommand()
         {
             Console.WriteLine("1 - show all stores");
-            Console.WriteLine("2 - show stores with selected type of product");
-            Console.WriteLine("3 - choose store");
-            Console.WriteLine("4 - back to main menu");
+            Console.WriteLine("2 - choose store");
+            Console.WriteLine("3 - back to main menu");
         }
 
         private bool ProccessCommand(string command)
@@ -54,26 +53,13 @@ namespace ChainOfStores.ConsoleView
             }
             else if (command == "2")
             {
-                ShowStoresWithSelectedTypeOfProduct();
-            }
-            else if (command == "3")
-            {
                 ChooseStore();
             }
-            else if (command == "4")
+            else if (command == "3")
             {
                 backToMenu = true;
             }
             return backToMenu;
-        }
-
-        private void ShowStoresWithSelectedTypeOfProduct()
-        {
-            if (_selectedItems.SelectedProductType != null)
-            {
-                List<StoreView> stores =  _storeService.GetAllStoresThatConteainThisTypeOfProduct(_selectedItems.SelectedProductType.Id).ToList();
-                WriteListOfStores(stores);
-            }
         }
 
         private void ChooseStore()

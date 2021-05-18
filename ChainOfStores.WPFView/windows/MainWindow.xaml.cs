@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ChainOfStores.Model.Services.Interfaces;
+using ChainOfStores.Model.Services.Realization.WhitoutDB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,16 @@ namespace Cha
         public MainWindow()
         {
             InitializeComponent();
+            IStoreService storeService = new StoreServiceWithoutDB();
+            IProductService productService = new ProductServiceWithoutDB();
+            IProductTypeService productTypeService = new ProductTypeServiceWithoutDB();
+            IBookingService bookingService = new BookingServiceWithoutDB();
+            DataContext = new MainWindowViewModel(productTypeService,storeService,bookingService,productService);
+        }
+
+        private void cbShowProductsInSelectedStore_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

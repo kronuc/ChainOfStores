@@ -41,7 +41,7 @@ namespace ChainOfStores.ConsoleView
         private void WriteListOfCommand()
         {
             Console.WriteLine("1 - show all product types");
-            Console.WriteLine("2 - show product types in selected store");
+            Console.WriteLine("2 - find product rype by name");
             Console.WriteLine("3 - choose product type");
             Console.WriteLine("4 - back to main menu");
         }
@@ -55,7 +55,7 @@ namespace ChainOfStores.ConsoleView
             }
             else if (command == "2")
             {
-                ShowAllProductTypesInStore();
+                FindByName();
             }
             else if (command == "3")
             {
@@ -66,6 +66,13 @@ namespace ChainOfStores.ConsoleView
                 backToMenu = true;
             }
             return backToMenu;
+        }
+
+        private void FindByName()
+        {
+            Console.Write("write product type name");
+            string name = Console.ReadLine();
+            WriteListOfProductTypes(_productTypeService.FindByName(name).ToList());
         }
 
         private void ChooseProductType()
@@ -84,19 +91,6 @@ namespace ChainOfStores.ConsoleView
 
         }
 
-        private void ShowAllProductTypesInStore()
-        {
-            if (_selectedItems.SelectedStore != null)
-            {
-                List<ProductTypeView> productTypesInStore = _productTypeService.GetAllProductTypesInStore(_selectedItems.SelectedStore.Id).ToList();
-                WriteListOfProductTypes(productTypesInStore);
-            }
-            else 
-            {
-                Console.WriteLine("You didn`t choose store");
-            }
-        }
-
         private void ShowAllProductTypes()
         {
             List<ProductTypeView> productTypes = _productTypeService.GetAllProductTypes().ToList();
@@ -105,10 +99,10 @@ namespace ChainOfStores.ConsoleView
 
         private void WriteListOfProductTypes(List<ProductTypeView> productTypes)
         {
-            Console.WriteLine("     product type name   price");
+            Console.WriteLine("     product type name   reconended price");
             foreach (ProductTypeView productType in productTypes)
             {
-                Console.WriteLine($"{productType.Id,5}{productType.Name,-20}{productType.Price.ToString()}");
+                Console.WriteLine($"{productType.Id,-5}{productType.Name,-20}{productType.PriceRecomendation.ToString()}");
             }
         }
     }

@@ -14,5 +14,6 @@ namespace ChainOfStores.Model.Services.Interfaces
         public IEnumerable<BookingView> GetAllBookings();
         public void DeleteBooking(int bookingID);
         public BookingView GetBookingByID(int bookingID);
+        public bool DoesProductAvailable(int productId);
     }
 }

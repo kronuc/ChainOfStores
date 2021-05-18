@@ -96,7 +96,7 @@ namespace ChainOfStores.ConsoleView
         
         private void MakeBooking()
         {
-            if (!_productService.DoesProductAvailable(_selectedItems.SelectedProduct.Id))
+            if (!_bookingService.DoesProductAvailable(_selectedItems.SelectedProduct.Id))
             {
                 Console.WriteLine("product doesn`t available, choose another one");
             }

@@ -10,7 +10,8 @@ namespace ChainOfStores.Model.ViewEntities
     {
         public int Id { get; set; }
         public int ProductTypeId { get; set; }
-        public int StoreID { get; set; }
+        public int StoreId { get; set; }
+        public int Price { get; set; }
         public DateTime DateOfProducing { get; set; }
     }
 }
