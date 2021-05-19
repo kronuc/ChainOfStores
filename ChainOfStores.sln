@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfStores.ConsoleView",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfStores.WPFView", "ChainOfStores.WPFView\ChainOfStores.WPFView.csproj", "{DAA1AF08-39F8-42F4-A826-7C8C6075C400}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfStores.Data", "ChainOfStores.Data\ChainOfStores.Data.csproj", "{D21D45AD-FF2B-469E-9972-5F58F2188F31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DAA1AF08-39F8-42F4-A826-7C8C6075C400}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAA1AF08-39F8-42F4-A826-7C8C6075C400}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAA1AF08-39F8-42F4-A826-7C8C6075C400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D21D45AD-FF2B-469E-9972-5F58F2188F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D21D45AD-FF2B-469E-9972-5F58F2188F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D21D45AD-FF2B-469E-9972-5F58F2188F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D21D45AD-FF2B-469E-9972-5F58F2188F31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
