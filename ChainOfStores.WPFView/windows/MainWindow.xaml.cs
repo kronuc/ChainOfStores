@@ -1,5 +1,6 @@
 ﻿using ChainOfStores.Model.Services.Interfaces;
 using ChainOfStores.Model.Services.Realization.WhitoutDB;
+using ChainOfStores.Model.Services.Realization.WithDataLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,10 +26,10 @@ namespace Cha
         public MainWindow()
         {
             InitializeComponent();
-            IStoreService storeService = new StoreServiceWithoutDB();
-            IProductService productService = new ProductServiceWithoutDB();
-            IProductTypeService productTypeService = new ProductTypeServiceWithoutDB();
-            IBookingService bookingService = new BookingServiceWithoutDB();
+            IProductTypeService productTypeService = new ProductTypeServiceDL();
+            IStoreService storeService = new StoreServiceDL();
+            IProductService productService = new ProductServiceDL();
+            IBookingService bookingService = new BookingServiceDL();
             DataContext = new MainWindowViewModel(productTypeService,storeService,bookingService,productService);
         }
 

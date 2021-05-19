@@ -11,6 +11,12 @@ namespace ChainOfStores.Data.Repositories.Realisation.EFRealisation
     class EFBookingRepository : IRepository<Booking>
     {
         private AppDBContext _DBContest;
+
+        public EFBookingRepository(AppDBContext dBContest)
+        {
+            _DBContest = dBContest;
+        }
+
         public void Create(Booking item)
         {
             _DBContest.Bookings.Add(item);

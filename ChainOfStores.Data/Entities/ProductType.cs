@@ -12,5 +12,6 @@ namespace ChainOfStores.Data.Entities
         public int ExpirationDate { get; set; }
         public string Name { get; set; }
         public float PriceRecomendation { get; set; }
+        public List<Product> Products { get; set; }
     }
 }

@@ -12,6 +12,11 @@ namespace ChainOfStores.Data.Repositories.Realisation.EFRealisation
     {
         private AppDBContext _DBContext;
 
+        public EFStoreRepository(AppDBContext dBContext)
+        {
+            _DBContext = dBContext;
+        }
+
         public void Create(Store item)
         {
             _DBContext.Stores.Add(item);

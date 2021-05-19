@@ -186,7 +186,7 @@ namespace Cha {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ChainOfStores.WPFView;V1.0.0.0;component/windows/mainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ChainOfStores.WPFView;component/windows/mainwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\windows\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -1,0 +1,12 @@
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\bin\Debug\net5.0\ChainOfStores.Data.deps.json
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\bin\Debug\net5.0\ChainOfStores.Data.dll
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\bin\Debug\net5.0\ref\ChainOfStores.Data.dll
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\bin\Debug\net5.0\ChainOfStores.Data.pdb
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.Data.csprojAssemblyReference.cache
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.Data.AssemblyInfoInputs.cache
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.Data.AssemblyInfo.cs
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.Data.csproj.CoreCompileInputs.cache
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.Data.dll
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ref\ChainOfStores.Data.dll
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.Data.pdb

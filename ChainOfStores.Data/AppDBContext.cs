@@ -8,7 +8,7 @@ namespace ChainOfStores.Data
     {
         public AppDBContext()
         {
-            Database.EnsureDeleted();
+            //Database.EnsureDeleted();
             Database.EnsureCreated();
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
