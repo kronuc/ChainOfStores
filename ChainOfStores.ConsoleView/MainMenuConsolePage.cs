@@ -33,8 +33,8 @@ namespace ChainOfStores.ConsoleView
 
             _storePage = new StoreConsolePage(storeService, _selectedItems);
             _productTypePage = new ProductTypeConsolePage(productTypeService, _selectedItems);
-            _productPage = new ProductConsolePage(productService, _selectedItems);
-            _bookingPage = new BookingConsolePage(bookingService, storeService, productService, productTypeService, _selectedItems);
+            _productPage = new ProductConsolePage(productService, bookingService, _selectedItems);
+            _bookingPage = new BookingConsolePage(bookingService, _selectedItems);
         }
 
         public void Run()

@@ -1,4 +1,4 @@
-﻿using ChainOfStores.Data.Entities;
+﻿using ChainOfStores.EFData.Entities;
 using ChainOfStores.Model.ViewEntities;
 using System;
 using System.Collections.Generic;

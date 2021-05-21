@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChainOfStores.Data.Repositories.Inerfaces
+namespace ChainOfStores.EFCData.Repositories.Inerfaces
 {
     public interface IRepository<T>
     {

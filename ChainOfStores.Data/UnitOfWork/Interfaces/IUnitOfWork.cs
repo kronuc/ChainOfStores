@@ -1,12 +1,12 @@
-﻿using ChainOfStores.Data.Entities;
-using ChainOfStores.Data.Repositories.Inerfaces;
+﻿using ChainOfStores.EFCData.Entities;
+using ChainOfStores.EFCData.Repositories.Inerfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChainOfStores.Data.UnitOfWork.Interfaces
+namespace ChainOfStores.EFCData.UnitOfWork.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {

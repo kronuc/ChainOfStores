@@ -1,14 +1,14 @@
-﻿using ChainOfStores.Data.Entities;
-using ChainOfStores.Data.Repositories.Inerfaces;
-using ChainOfStores.Data.Repositories.Realisation.EFRealisation;
-using ChainOfStores.Data.UnitOfWork.Interfaces;
+﻿using ChainOfStores.EFCData.Entities;
+using ChainOfStores.EFCData.Repositories.Inerfaces;
+using ChainOfStores.EFCData.Repositories.Realisation.EFRealisation;
+using ChainOfStores.EFCData.UnitOfWork.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChainOfStores.Data.UnitOfWork.Realisation.EFRealisation
+namespace ChainOfStores.EFCData.UnitOfWork.Realisation.EFRealisation
 {
     public class EFUnitOfWork : IUnitOfWork
     {

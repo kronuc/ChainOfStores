@@ -10,3 +10,6 @@ C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\C
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.Data.dll
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ref\ChainOfStores.Data.dll
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.Data.pdb
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\bin\Debug\net5.0\ChainOfStores.Data.runtimeconfig.json
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\bin\Debug\net5.0\ChainOfStores.Data.runtimeconfig.dev.json
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.Data.genruntimeconfig.cache

@@ -22,9 +22,10 @@ C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.dll
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ref\ChainOfStores.Model.dll
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.pdb
-C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ChainOfStores.Data.dll
-C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ChainOfStores.Data.pdb
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.csproj.CopyComplete
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ChainOfStores.Model.runtimeconfig.json
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ChainOfStores.Model.runtimeconfig.dev.json
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Model\obj\Debug\net5.0\ChainOfStores.Model.genruntimeconfig.cache
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ChainOfStores.EFData.exe
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ChainOfStores.EFData.pdb
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Model\bin\Debug\net5.0\ChainOfStores.EFData.exe.config

@@ -106,6 +106,7 @@
                                     <GridViewColumn Header="Id" Width="50" DisplayMemberBinding="{Binding Path=Id}"/>
                                     <GridViewColumn Header="Type Id" Width="150" DisplayMemberBinding="{Binding Path=ProductTypeId}"/>
                                     <GridViewColumn Header="Store Id" Width="150" DisplayMemberBinding="{Binding Path=StoreId}"/>
+                                    <GridViewColumn Header="Price" Width="150" DisplayMemberBinding="{Binding Path=Price}"/>
                                     <GridViewColumn Header="Producing date" Width="150" DisplayMemberBinding="{Binding Path=DateOfProducing}"/>
                                 </GridView>
                             </ListView.View>

@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
-using ChainOfStores.Data.Entities;
+using ChainOfStores.EFCData.Entities;
 
-namespace ChainOfStores.Data
+namespace ChainOfStores.EFCData
 {
     public class AppDBContext : DbContext
     {

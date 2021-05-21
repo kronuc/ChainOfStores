@@ -1,7 +1,7 @@
 ﻿using Abp.EntityFramework.Uow;
-using ChainOfStores.Data.Entities;
-using ChainOfStores.Data.UnitOfWork.Interfaces;
-using ChainOfStores.Data.UnitOfWork.Realisation.EFRealisation;
+using ChainOfStores.EFData.Entities;
+using ChainOfStores.EFData.UnitOfWork.Interfaces;
+using ChainOfStores.EFData.UnitOfWork.Realisation.EFRealisation;
 using ChainOfStores.Model.Mappers;
 using ChainOfStores.Model.Services.Interfaces;
 using ChainOfStores.Model.ViewEntities;

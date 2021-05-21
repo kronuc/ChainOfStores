@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChainOfStores.Data.Entities
+namespace ChainOfStores.EFCData.Entities
 {
     public class Booking
     {

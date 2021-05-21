@@ -1,0 +1,15 @@
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\bin\Debug\net5.0\ChainOfStores.EFCData.deps.json
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\bin\Debug\net5.0\ChainOfStores.EFCData.runtimeconfig.json
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\bin\Debug\net5.0\ChainOfStores.EFCData.runtimeconfig.dev.json
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\bin\Debug\net5.0\ChainOfStores.EFCData.dll
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\bin\Debug\net5.0\ref\ChainOfStores.EFCData.dll
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\bin\Debug\net5.0\ChainOfStores.EFCData.pdb
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.EFCData.csprojAssemblyReference.cache
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.EFCData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.EFCData.AssemblyInfoInputs.cache
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.EFCData.AssemblyInfo.cs
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.EFCData.csproj.CoreCompileInputs.cache
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.EFCData.dll
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ref\ChainOfStores.EFCData.dll
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.EFCData.pdb
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.Data\obj\Debug\net5.0\ChainOfStores.EFCData.genruntimeconfig.cache
