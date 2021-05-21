@@ -28,15 +28,15 @@ namespace ChainOfStores.Model.Services.Realization.WithDataLayer
 
         public IEnumerable<ProductView> GetAllProductsInStore(int storeID)
         {
-            return _unitOfWork.ProductRepository.GetAll()
-                .Where(product => product.StoreId == storeID)
+            return _unitOfWork.ProductRepository
+                .GetProudctsByStore(storeID)
                 .Select(obj => ProductMapper.ToViewEntity(obj));
         }
 
         public IEnumerable<ProductView> GetAllProductsWithSelectedProductType(int productTypeID)
         {
-            return _unitOfWork.ProductRepository.GetAll()
-                .Where(product => product.ProductTypeId == productTypeID)
+            return _unitOfWork.ProductRepository
+                .GetProudctsByType(productTypeID)
                 .Select(obj => ProductMapper.ToViewEntity(obj));
         }
 
@@ -46,8 +46,8 @@ namespace ChainOfStores.Model.Services.Realization.WithDataLayer
 
         public IEnumerable<ProductView> GetAllProductsWithSelectedProductTypeAndStore(int productTypeID, int storeId)
         {
-            return _unitOfWork.ProductRepository.GetAll()
-                .Where(product => product.ProductTypeId == productTypeID && product.StoreId == storeId)
+            return _unitOfWork.ProductRepository
+                .GetProudctsByStoreAndType(productTypeID, storeId)
                 .Select(obj => ProductMapper.ToViewEntity(obj));
         }
 

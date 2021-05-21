@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.EFData.Repositories.Realisation.EFRealisation
 {
-    class EFProductRepository : IRepository<Product>
+    class EFProductRepository : IProuductRepository
     {
         private EFAppDBContext _DBContext;
 
@@ -37,6 +37,21 @@ namespace ChainOfStores.EFData.Repositories.Realisation.EFRealisation
         public Product GetById(int id)
         {
             return _DBContext.Products.First(product => product.Id == id);
+        }
+
+        public IEnumerable<Product> GetProudctsByStore(int storeId)
+        {
+            return _DBContext.Products.Where(product => product.StoreId == storeId);
+        }
+
+        public IEnumerable<Product> GetProudctsByStoreAndType(int typeId, int storeId)
+        {
+            return _DBContext.Products.Where(product => product.ProductTypeId == typeId && product.StoreId == storeId);
+        }
+
+        public IEnumerable<Product> GetProudctsByType(int typeId)
+        {
+            return _DBContext.Products.Where(product => product.ProductTypeId == typeId);
         }
 
         public void Update(Product item)

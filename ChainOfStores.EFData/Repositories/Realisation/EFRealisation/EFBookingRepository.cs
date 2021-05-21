@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.EFData.Repositories.Realisation.EFRealisation
 {
-    class EFBookingRepository : IRepository<Booking>
+    class EFBookingRepository : IBookingRepository
     {
         private EFAppDBContext _DBContext;
 

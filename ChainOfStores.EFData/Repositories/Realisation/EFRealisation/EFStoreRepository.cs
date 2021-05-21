@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.EFData.Repositories.Realisation.EFRealisation
 {
-    class EFStoreRepository : IRepository<Store>
+    class EFStoreRepository : IStoreRepository
     {
         private EFAppDBContext _DBContext;
 

@@ -13,10 +13,10 @@ namespace ChainOfStores.EFData.UnitOfWork.Realisation.EFRealisation
 {
     public class EFUnitOfWork : IUnitOfWork
     {
-        public IRepository<Product> ProductRepository { get; set; }
-        public IRepository<ProductType> ProductTypeRepository { get; set; }
-        public IRepository<Store> StoreRepository { get; set; }
-        public IRepository<Booking> BookingRepository { get; set; }
+        public IProuductRepository ProductRepository { get; set; }
+        public IProductTypeRepository ProductTypeRepository { get; set; }
+        public IStoreRepository StoreRepository { get; set; }
+        public IBookingRepository BookingRepository { get; set; }
 
         private EFAppDBContext _dBContest;
 
