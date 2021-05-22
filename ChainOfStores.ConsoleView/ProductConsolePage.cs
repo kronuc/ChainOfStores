@@ -111,16 +111,20 @@ namespace ChainOfStores.ConsoleView
 
         private void ShowProductsWithSelectedTypeInSelectedStore()
         {
-            if (_selectedItems.SelectedProductType != null)
+            if (_selectedItems.SelectedProductType == null)
             {
-                List<ProductView> products = _productService
-                    .GetAllProductsWithSelectedProductTypeAndStore(_selectedItems.SelectedProductType.Id, _selectedItems.SelectedStore.Id)
-                    .ToList();
-                WriteListOfProducts(products);
+                Console.WriteLine("\n you didn`t choose product type");
+            }
+            else if (_selectedItems.SelectedStore == null)
+            {
+                Console.WriteLine("\n you didn`t choose store");
             }
             else
             {
-                Console.WriteLine("\n you didn`t choose product type");
+                List<ProductView> products = _productService
+                       .GetAllProductsWithSelectedProductTypeAndStore(_selectedItems.SelectedProductType.Id, _selectedItems.SelectedStore.Id)
+                       .ToList();
+                WriteListOfProducts(products);
             }
         }
 

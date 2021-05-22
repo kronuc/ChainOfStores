@@ -7640,11 +7640,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kronuc\\source\\repos\\ChainOfStores\\ChainOfStores.WPFView\\ChainOfStores.WPFView.csproj",
+      "projectUniqueName": "C:\\Users\\kronuc\\Source\\Repos\\ChainOfStore\\ChainOfStores.WPFView\\ChainOfStores.WPFView.csproj",
       "projectName": "ChainOfStores.WPFView",
-      "projectPath": "C:\\Users\\kronuc\\source\\repos\\ChainOfStores\\ChainOfStores.WPFView\\ChainOfStores.WPFView.csproj",
+      "projectPath": "C:\\Users\\kronuc\\Source\\Repos\\ChainOfStore\\ChainOfStores.WPFView\\ChainOfStores.WPFView.csproj",
       "packagesPath": "C:\\Users\\kronuc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kronuc\\source\\repos\\ChainOfStores\\ChainOfStores.WPFView\\obj\\",
+      "outputPath": "C:\\Users\\kronuc\\Source\\Repos\\ChainOfStore\\ChainOfStores.WPFView\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7665,8 +7665,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\kronuc\\source\\repos\\ChainOfStores\\ChainOfStores.Model\\ChainOfStores.Model.csproj": {
-              "projectPath": "C:\\Users\\kronuc\\source\\repos\\ChainOfStores\\ChainOfStores.Model\\ChainOfStores.Model.csproj"
+            "C:\\Users\\kronuc\\Source\\Repos\\ChainOfStore\\ChainOfStores.Model\\ChainOfStores.Model.csproj": {
+              "projectPath": "C:\\Users\\kronuc\\Source\\Repos\\ChainOfStore\\ChainOfStores.Model\\ChainOfStores.Model.csproj"
             }
           }
         }

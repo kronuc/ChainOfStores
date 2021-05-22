@@ -10,3 +10,15 @@ C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.EFData\obj\Debug\ChainO
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.EFData\obj\Debug\ChainOfStores.EFData.csproj.CopyComplete
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.EFData\obj\Debug\ChainOfStores.EFData.exe
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.EFData\obj\Debug\ChainOfStores.EFData.pdb
+C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.EFData\bin\Debug\ChainOfStores.EFData.exe.config
+C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.EFData\bin\Debug\ChainOfStores.EFData.exe
+C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.EFData\bin\Debug\ChainOfStores.EFData.pdb
+C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.EFData\bin\Debug\EntityFramework.dll
+C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.EFData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.EFData\bin\Debug\EntityFramework.xml
+C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.EFData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.EFData\obj\Debug\ChainOfStores.EFData.csprojAssemblyReference.cache
+C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.EFData\obj\Debug\ChainOfStores.EFData.csproj.CoreCompileInputs.cache
+C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.EFData\obj\Debug\ChainOfStores.EFData.csproj.CopyComplete
+C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.EFData\obj\Debug\ChainOfStores.EFData.exe
+C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.EFData\obj\Debug\ChainOfStores.EFData.pdb
