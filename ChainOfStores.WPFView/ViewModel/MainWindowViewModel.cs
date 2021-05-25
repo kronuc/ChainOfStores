@@ -195,7 +195,7 @@ namespace Cha
                 }
                 else
                 {
-                    _bookingService.MakeBooking(SelectedProduct.Id, DateTime.Now);
+                    _bookingService.MakeBooking(new BookingView() { ProductID = SelectedProduct.Id, DataOfBooking = DateTime.Now, ClientName = "jonatan" });
                     Messege = "succsess";
                     Bookings = new ObservableCollection<BookingView>(_bookingService.GetAllBookings());
                 }

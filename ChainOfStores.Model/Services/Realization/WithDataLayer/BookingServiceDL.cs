@@ -38,10 +38,9 @@ namespace ChainOfStores.Model.Services.Realization.WithDataLayer
             return BookingMapper.ToViewEntity(_unitOfWork.BookingRepository.GetById(bookingID));
         }
 
-        public void MakeBooking(int productID, DateTime dataOfBooking)
+        public void MakeBooking(BookingView booking)
         {
-            Booking booking = new Booking() { ProductID = productID, DataOfBooking = dataOfBooking };
-            _unitOfWork.BookingRepository.Create(booking);
+            _unitOfWork.BookingRepository.Create(BookingMapper.ToDataEntity(booking));
             _unitOfWork.Save();
         }
         public bool DoesProductAvailable(int productId)

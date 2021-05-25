@@ -16,6 +16,7 @@ namespace ChainOfStores.Model.Mappers
             dataEntity.Id = viewEntity.Id;
             dataEntity.ProductID = viewEntity.ProductID;
             dataEntity.DataOfBooking = viewEntity.DataOfBooking;
+            dataEntity.ClientName = viewEntity.ClientName;
             return dataEntity;
         }
 
@@ -25,6 +26,7 @@ namespace ChainOfStores.Model.Mappers
             viewEntity.Id = dataEntity.Id;
             viewEntity.DataOfBooking = dataEntity.DataOfBooking;
             viewEntity.ProductID = dataEntity.ProductID;
+            viewEntity.ClientName = dataEntity.ClientName;
             return viewEntity;
         }
     }

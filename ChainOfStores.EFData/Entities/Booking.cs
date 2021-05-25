@@ -14,5 +14,6 @@ namespace ChainOfStores.EFData.Entities
         public DateTime DataOfBooking { get; set; }
         public int ProductID { get; set; }
         public Product Product { get; set; }
+        public string ClientName { get; set; }
     }
 }
