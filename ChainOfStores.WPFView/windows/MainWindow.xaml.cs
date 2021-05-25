@@ -33,9 +33,5 @@ namespace Cha
             DataContext = new MainWindowViewModel(productTypeService,storeService,bookingService,productService);
         }
 
-        private void cbShowProductsInSelectedStore_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

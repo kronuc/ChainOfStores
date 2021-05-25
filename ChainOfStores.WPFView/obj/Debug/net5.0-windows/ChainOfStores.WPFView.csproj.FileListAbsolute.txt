@@ -126,3 +126,4 @@ C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.WPFView\obj\Debug\net5.0
 C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.WPFView\obj\Debug\net5.0-windows\ref\ChainOfStores.WPFView.dll
 C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.WPFView\obj\Debug\net5.0-windows\ChainOfStores.WPFView.pdb
 C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.WPFView\obj\Debug\net5.0-windows\ChainOfStores.WPFView.genruntimeconfig.cache
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.WPFView\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.dll

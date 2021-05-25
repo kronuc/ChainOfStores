@@ -189,14 +189,19 @@ namespace Cha
                 {
                     Messege = "fail: you did`n choose product";
                 }
+                else if (_textFor_tbCtienName == null || _textFor_tbCtienName.Trim() == "")
+                {
+                    Messege = "fail: you didn`t write your name";
+                }
                 else if (!_bookingService.DoesProductAvailable(SelectedProduct.Id))
                 {
                     Messege = "fail: product already booked";
                 }
                 else
                 {
-                    _bookingService.MakeBooking(new BookingView() { ProductID = SelectedProduct.Id, DataOfBooking = DateTime.Now, ClientName = "jonatan" });
+                    _bookingService.MakeBooking(new BookingView() { ProductID = SelectedProduct.Id, DataOfBooking = DateTime.Now, ClientName = _textFor_tbCtienName.Trim() });
                     Messege = "succsess";
+                    TextFor_tbClientName = "";
                     Bookings = new ObservableCollection<BookingView>(_bookingService.GetAllBookings());
                 }
             });
@@ -224,12 +229,22 @@ namespace Cha
         private string _textFor_tbFindByName;
         public string TextFor_tbFindByName 
         { 
-            get => _textFor_tbFindByName;
+            get => _textFor_tbFindByName ??= "";
             set
             {
                 _textFor_tbFindByName = value;
                 OnPropertyChanged(nameof(TextFor_tbFindByName));
             } 
+        }
+        private string _textFor_tbCtienName;
+        public string TextFor_tbClientName 
+        {
+            get => _textFor_tbCtienName;
+            set 
+            {
+                _textFor_tbCtienName = value;
+                OnPropertyChanged(nameof(TextFor_tbClientName));
+            }
         }
 
         private RelayCommand _filterTypesByName;
@@ -237,7 +252,8 @@ namespace Cha
         {
             get => _filterTypesByName ??= new RelayCommand(obj =>
             {
-                ProductTypes = new ObservableCollection<ProductTypeView>(_productTypeService.FindByName(TextFor_tbFindByName));
+                if (TextFor_tbClientName != "")
+                    ProductTypes = new ObservableCollection<ProductTypeView>(_productTypeService.FindByName(TextFor_tbFindByName));
             });
         }
 

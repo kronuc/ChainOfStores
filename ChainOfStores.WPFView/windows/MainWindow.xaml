@@ -12,11 +12,6 @@
             <RowDefinition Height="15*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
         <TabControl x:Name="Products" Grid.Row="0" Grid.ColumnSpan="3">
             <TabItem x:Name="ProductType">
                 <TabItem.Header>
@@ -31,7 +26,7 @@
                             <RowDefinition Height="1*"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="20*"/>
+                            <ColumnDefinition Width="10*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <ListView x:Name="ViewProductTypes" Grid.Row="0" Grid.ColumnSpan="2" ItemsSource="{Binding ProductTypes}" SelectedItem="{Binding SelectedProductType}">
@@ -55,7 +50,7 @@
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
                         </TextBox>
-                        <Button x:Name="noFunctionButton" Grid.Column="1" Grid.Row="1"/>
+                        <Button x:Name="noFunctionButton" Content="Find" Grid.Column="1" Grid.Row="1" Command="{Binding FilterTypesByName}"/>
                     </Grid>
                 </TabItem.Content>
             </TabItem>
@@ -111,7 +106,7 @@
                                 </GridView>
                             </ListView.View>
                         </ListView>
-                        <CheckBox x:Name="cbShowProductsInSelectedStore" Grid.Row="2" Grid.Column="0" IsChecked="False" Height="20" Content="show products in selected store" Checked="cbShowProductsInSelectedStore_Checked">
+                        <CheckBox x:Name="cbShowProductsInSelectedStore" Grid.Row="2" Grid.Column="0" IsChecked="False" Height="20" Content="show products in selected store">
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="Checked">
                                     <i:InvokeCommandAction Command="{Binding FilterProductsByStore_Checked}" />
@@ -141,21 +136,33 @@
                     </StackPanel>
                 </TabItem.Header>
                 <TabItem.Content>
-                    <ListView x:Name="ViewBookings" Grid.Row="0" Grid.ColumnSpan="2" ItemsSource="{Binding Bookings}" SelectedItem="{Binding SelectedBooking}">
-                        <ListView.View>
-                            <GridView>
-                                <GridViewColumn Header="Id" Width="50" DisplayMemberBinding="{Binding Path=Id}"/>
-                                <GridViewColumn Header="Product Id" Width="150" DisplayMemberBinding="{Binding Path=ProductID}"/>
-                                <GridViewColumn Header="Date of booking" Width="150" DisplayMemberBinding="{Binding Path=DataOfBooking}"/>
-                                <GridViewColumn Header="Clien Name" Width="150" DisplayMemberBinding="{Binding Path=ClientName}"/>
-                            </GridView>
-                        </ListView.View>
-                    </ListView>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="15*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <ListView x:Name="ViewBookings" Grid.Row="0" Grid.ColumnSpan="3" ItemsSource="{Binding Bookings}" SelectedItem="{Binding SelectedBooking}">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Id" Width="50" DisplayMemberBinding="{Binding Path=Id}"/>
+                                    <GridViewColumn Header="Product Id" Width="150" DisplayMemberBinding="{Binding Path=ProductID}"/>
+                                    <GridViewColumn Header="Date of booking" Width="150" DisplayMemberBinding="{Binding Path=DataOfBooking}"/>
+                                    <GridViewColumn Header="Clien Name" Width="150" DisplayMemberBinding="{Binding Path=ClientName}"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                        <Button x:Name="bMakeBooking" Width="200"  Grid.Row="1" Grid.Column="1" Content="make booking" Command="{Binding MakeBooking}"/>
+                        <Button x:Name="bDeletebooking" Width="200"  Grid.Row="1" Grid.Column="0" Content="delete booking" Command="{Binding DeleteBooking}"/>
+                        <TextBox x:Name="tbClientName" Grid.Column="2" SpellCheck.IsEnabled="True" Grid.Row="1" Text="{Binding TextFor_tbClientName}" />
+                    </Grid>
                 </TabItem.Content>
             </TabItem>
         </TabControl>
-        <Button x:Name="bMakeBooking" Width="200"  Grid.Row="1" Grid.Column="0" Content="make booking" Command="{Binding MakeBooking}"/>
-        <Button x:Name="bDeletebooking" Width="200"  Grid.Row="1" Grid.Column="1" Content="delete booking" Command="{Binding DeleteBooking}"/>
-        <Label x:Name="lMessege" Content="{Binding Messege}" Grid.Column="2" Grid.Row="1" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lMessege" Content="{Binding Messege}" Grid.Row="1" HorizontalContentAlignment="Center"/>
     </Grid>
 </Window>

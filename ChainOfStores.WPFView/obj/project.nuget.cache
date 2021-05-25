@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iOd+oqypiYhddicZMqkB0MefeJ/n7wYMWGRPMqdOwIimp8XIUoMqEkAMvk7YifDX20yqVYYP5Pn5Rlm67bNWGg==",
+  "dgSpecHash": "O5pTKi2KMvEasNe+m6yLE/4q8Ty2nWPuRTYB9nwxaW8YIctLzw0+zclJfCwasM497619crbOJpiMC5ULMD/8EA==",
   "success": true,
   "projectFilePath": "C:\\Users\\kronuc\\source\\repos\\ChainOfStores\\ChainOfStores.WPFView\\ChainOfStores.WPFView.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\kronuc\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\1.1.2\\microsoft.dotnet.platformabstractions.1.1.2.nupkg.sha512",
     "C:\\Users\\kronuc\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\kronuc\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
+    "C:\\Users\\kronuc\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
     "C:\\Users\\kronuc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\kronuc\\.nuget\\packages\\microsoft.extensions.dependencymodel\\1.1.2\\microsoft.extensions.dependencymodel.1.1.2.nupkg.sha512",
     "C:\\Users\\kronuc\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
