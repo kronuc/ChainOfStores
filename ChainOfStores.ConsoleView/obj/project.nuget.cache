@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FNw+frgvALU2Lyd9K/UQ89ksVgc14PlJ8VeHvLldojpaTMLc/1xR1MD7S0TETEpoP8eWRfmQGden8z4njbkXXQ==",
+  "dgSpecHash": "gO5Fl2+THmbqm7JFHKQDZ5t5io2GDVx+XLsr58PUQtqzoeOKf+OkZVTnRmZuvvZbZDGplnrjgsfEJBx2YgnWAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kronuc\\Source\\Repos\\ChainOfStore\\ChainOfStores.ConsoleView\\ChainOfStores.ConsoleView.csproj",
+  "projectFilePath": "C:\\Users\\kronuc\\source\\repos\\ChainOfStores\\ChainOfStores.ConsoleView\\ChainOfStores.ConsoleView.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kronuc\\.nuget\\packages\\abp\\6.3.1\\abp.6.3.1.nupkg.sha512",
     "C:\\Users\\kronuc\\.nuget\\packages\\abp.entityframework\\6.3.1\\abp.entityframework.6.3.1.nupkg.sha512",

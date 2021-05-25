@@ -13,7 +13,7 @@ namespace ChainOfStores.ConsoleView
         private IProductService _productService;
         private SelectedItems _selectedItems;
         private IBookingService _bookingService;
-        public ProductConsolePage(IProductService productService, IBookingService bookingService SelectedItems selectedItems)
+        public ProductConsolePage(IProductService productService, IBookingService bookingService, SelectedItems selectedItems)
         {
             _productService = productService;
             _selectedItems = selectedItems;

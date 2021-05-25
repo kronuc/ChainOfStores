@@ -10,53 +10,27 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.EFData.Repositories.Realisation.EFRealisation
 {
-    class EFProductRepository : IProuductRepository
+    class EFProductRepository : EFGenericRepository<Product>, IProuductRepository
     {
-        private EFAppDBContext _DBContext;
-
-        public EFProductRepository(EFAppDBContext dBContext)
+        
+        public EFProductRepository(EFAppDBContext dBContext) : base(dBContext)
         {
-            _DBContext = dBContext;
-        }
-
-        public void Create(Product item)
-        {
-            _DBContext.Products.Add(item);
-        }
-
-        public void Delete(Product item)
-        {
-            _DBContext.Products.Remove(item);
-        }
-
-        public IEnumerable<Product> GetAll()
-        {
-            return _DBContext.Products.AsEnumerable();
-        }
-
-        public Product GetById(int id)
-        {
-            return _DBContext.Products.First(product => product.Id == id);
         }
 
         public IEnumerable<Product> GetProudctsByStore(int storeId)
         {
-            return _DBContext.Products.Where(product => product.StoreId == storeId);
+            return _entities.Where(product => product.StoreId == storeId);
         }
 
         public IEnumerable<Product> GetProudctsByStoreAndType(int typeId, int storeId)
         {
-            return _DBContext.Products.Where(product => product.ProductTypeId == typeId && product.StoreId == storeId);
+            return _entities.Where(product => product.ProductTypeId == typeId && product.StoreId == storeId);
         }
 
         public IEnumerable<Product> GetProudctsByType(int typeId)
         {
-            return _DBContext.Products.Where(product => product.ProductTypeId == typeId);
+            return _entities.Where(product => product.ProductTypeId == typeId);
         }
 
-        public void Update(Product item)
-        {
-            _DBContext.Entry(item).State = EntityState.Modified;
-        }
     }
 }

@@ -66,6 +66,7 @@
     <Compile Include="Repositories\Inerfaces\IRepository.cs" />
     <Compile Include="Repositories\Inerfaces\IStoreService.cs" />
     <Compile Include="Repositories\Realisation\EFRealisation\EFBookingRepository.cs" />
+    <Compile Include="Repositories\Realisation\EFRealisation\EFGenericRepository.cs" />
     <Compile Include="Repositories\Realisation\EFRealisation\EFProductRepository.cs" />
     <Compile Include="Repositories\Realisation\EFRealisation\EFProductTypeRepository.cs" />
     <Compile Include="Repositories\Realisation\EFRealisation\EFStoreRepository.cs" />

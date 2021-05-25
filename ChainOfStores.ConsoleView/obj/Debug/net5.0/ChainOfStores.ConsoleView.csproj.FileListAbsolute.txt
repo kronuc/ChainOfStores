@@ -13,3 +13,9 @@ C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.ConsoleView\obj\Debug\n
 C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.ConsoleView\obj\Debug\net5.0\ChainOfStores.ConsoleView.dll
 C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.ConsoleView\obj\Debug\net5.0\ref\ChainOfStores.ConsoleView.dll
 C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.ConsoleView\obj\Debug\net5.0\ChainOfStores.ConsoleView.pdb
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.ConsoleView\bin\Debug\net5.0\ChainOfStores.ConsoleView.runtimeconfig.json
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.ConsoleView\bin\Debug\net5.0\ChainOfStores.ConsoleView.runtimeconfig.dev.json
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.ConsoleView\bin\Debug\net5.0\ChainOfStores.EFData.exe
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.ConsoleView\bin\Debug\net5.0\ChainOfStores.EFData.pdb
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.ConsoleView\bin\Debug\net5.0\ChainOfStores.EFData.exe.config
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.ConsoleView\obj\Debug\net5.0\ChainOfStores.ConsoleView.genruntimeconfig.cache

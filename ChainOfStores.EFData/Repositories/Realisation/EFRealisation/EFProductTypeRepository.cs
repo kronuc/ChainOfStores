@@ -10,38 +10,12 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.EFData.Repositories.Realisation.EFRealisation
 {
-    class EFProductTypeRepository : IProductTypeRepository
+    class EFProductTypeRepository : EFGenericRepository<ProductType>, IProductTypeRepository
     {
-        private EFAppDBContext _DBContext;
 
-        public EFProductTypeRepository(EFAppDBContext dBContext)
+        public EFProductTypeRepository(EFAppDBContext dBContext) : base(dBContext)
         {
-            _DBContext = dBContext;
         }
-
-        public void Create(ProductType item)
-        {
-            _DBContext.ProductTypes.Add(item);
-        }
-
-        public void Delete(ProductType item)
-        {
-            _DBContext.ProductTypes.Remove(item);
-        }
-
-        public IEnumerable<ProductType> GetAll()
-        {
-            return _DBContext.ProductTypes.AsEnumerable();
-        }
-
-        public ProductType GetById(int id)
-        {
-            return _DBContext.ProductTypes.First(type => type.Id == id);
-        }
-
-        public void Update(ProductType item)
-        {
-            _DBContext.Entry(item).State = EntityState.Modified;
-        }
+    
     }
 }
