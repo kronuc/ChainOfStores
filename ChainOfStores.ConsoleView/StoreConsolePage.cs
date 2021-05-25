@@ -71,6 +71,10 @@ namespace ChainOfStores.ConsoleView
             {
                 _selectedItems.SelectedStore = _storeService.GetStoreByID(storeId);
             }
+            else if (_selectedItems.SelectedStore == null)
+            {
+                Console.WriteLine("No store with such id");
+            }
             else
             {
                 Console.WriteLine("\nWrong Id");

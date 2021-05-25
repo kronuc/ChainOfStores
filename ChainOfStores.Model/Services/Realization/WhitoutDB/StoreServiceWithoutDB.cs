@@ -26,7 +26,7 @@ namespace ChainOfStores.Model.Services.Realization.WhitoutDB
 
         public StoreView GetStoreByID(int storeID)
         {
-            return _stores.Where(store => store.Id == storeID).First();
+            return _stores.Where(store => store.Id == storeID).FirstOrDefault();
         }
 
         private void InitialiseData()

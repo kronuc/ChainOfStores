@@ -35,7 +35,7 @@ namespace ChainOfStores.Model.Services.Realization.WhitoutDB
 
         public ProductView GetProductByID(int productID)
         {
-            return _products.Where(product => product.Id == productID).First();
+            return _products.Where(product => product.Id == productID).FirstOrDefault();
         }
 
         public IEnumerable<ProductView> GetAllProductsWithSelectedProductTypeAndStore(int productTypeID, int storeId)

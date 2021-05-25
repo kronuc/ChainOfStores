@@ -20,7 +20,7 @@ namespace ChainOfStores.Model.Services.Realization.WhitoutDB
 
         public void DeleteBooking(int bookingID)
         {
-            _bookings.Remove(_bookings.Where(booking => booking.Id == bookingID).First());
+            _bookings.Remove(_bookings.Where(booking => booking.Id == bookingID).FirstOrDefault());
         }
 
         public IEnumerable<BookingView> GetAllBookings()

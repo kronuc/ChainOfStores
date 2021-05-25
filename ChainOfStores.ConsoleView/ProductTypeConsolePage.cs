@@ -84,6 +84,10 @@ namespace ChainOfStores.ConsoleView
             {
                 _selectedItems.SelectedProductType = _productTypeService.GetProductTypeByID(productTypeId);
             }
+            else if (_selectedItems.SelectedProductType == null)
+            {
+                Console.WriteLine("no product type with such id");
+            }
             else
             {
                 Console.WriteLine("\nWrong Id");
