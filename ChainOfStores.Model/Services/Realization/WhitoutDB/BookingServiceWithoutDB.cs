@@ -33,13 +33,16 @@ namespace ChainOfStores.Model.Services.Realization.WhitoutDB
             return _bookings.Where(booking => booking.Id == bookingID).FirstOrDefault();
         }
 
-        public void MakeBooking(int productID, DateTime dataOfBooking)
+        public void MakeBooking(BookingView booking)
         {
             _bookings.Add(new BookingView() 
             { 
-                ProductID = productID, 
-                DataOfBooking = dataOfBooking, 
+                Id = BookingView.nextId,
+                ProductID = booking.ProductID, 
+                DataOfBooking = booking.DataOfBooking,
+                ClientName = booking.ClientName
             });
+            BookingView.nextId++;
         }
         public bool DoesProductAvailable(int productId)
         {

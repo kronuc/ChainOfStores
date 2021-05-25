@@ -58,6 +58,11 @@
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\ProductType.cs" />
     <Compile Include="Entities\Store.cs" />
+    <Compile Include="Migrations\202105250815066_AddClientNameMigration.cs" />
+    <Compile Include="Migrations\202105250815066_AddClientNameMigration.designer.cs">
+      <DependentUpon>202105250815066_AddClientNameMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Inerfaces\IBookingRepository.cs" />
@@ -76,6 +81,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202105250815066_AddClientNameMigration.resx">
+      <DependentUpon>202105250815066_AddClientNameMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
