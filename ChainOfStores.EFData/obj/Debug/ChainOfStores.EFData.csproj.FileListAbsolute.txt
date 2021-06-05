@@ -24,3 +24,5 @@ C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.EFData\obj\Debug\ChainOf
 C:\Users\kronuc\Source\Repos\ChainOfStore\ChainOfStores.EFData\obj\Debug\ChainOfStores.EFData.pdb
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.EFData\obj\Debug\ChainOfStores.EFData.Migrations.AddClientNameMigration.resources
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.EFData\obj\Debug\ChainOfStores.EFData.csproj.GenerateResource.cache
+C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.EFData\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.EFData\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml

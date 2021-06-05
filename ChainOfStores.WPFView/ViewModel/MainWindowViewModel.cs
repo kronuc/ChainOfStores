@@ -12,7 +12,7 @@ using System.Windows;
 
 namespace Cha
 {
-    class MainWindowViewModel : INotifyPropertyChanged
+    public class MainWindowViewModel : INotifyPropertyChanged
     {
         private IProductTypeService _productTypeService;
         private IStoreService _storeService;

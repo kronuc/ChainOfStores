@@ -15,6 +15,5 @@ namespace ChainOfStores.EFData.UnitOfWork.Interfaces
         IStoreRepository StoreRepository { get; set; }
         IBookingRepository BookingRepository { get; set; }
         void Save();
-        void Dispose();
     }
 }

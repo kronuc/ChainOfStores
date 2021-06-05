@@ -23,14 +23,10 @@ namespace Cha
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(MainWindowViewModel viewModel)
         {
+            DataContext = viewModel;
             InitializeComponent();
-            IProductTypeService productTypeService = new ProductTypeServiceDL();
-            IStoreService storeService = new StoreServiceDL();
-            IProductService productService = new ProductServiceDL();
-            IBookingService bookingService = new BookingServiceDL();
-            DataContext = new MainWindowViewModel(productTypeService,storeService,bookingService,productService);
         }
 
     }
