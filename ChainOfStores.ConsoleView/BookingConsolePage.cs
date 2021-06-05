@@ -100,7 +100,8 @@ namespace ChainOfStores.ConsoleView
             }
             else
             {
-                _bookingService.MakeBooking(_selectedItems.SelectedProduct.Id, DateTime.Now);
+                _bookingService.MakeBooking(new BookingView() { ProductID = _selectedItems.SelectedProduct.Id, DataOfBooking
+                    = DateTime.Now });
             }
         }
 

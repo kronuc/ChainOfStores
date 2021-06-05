@@ -10,7 +10,7 @@ namespace ChainOfStores.EFData.UnitOfWork.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        IProuductRepository ProductRepository { get; set; }
+        IProductRepository ProductRepository { get; set; }
         IProductTypeRepository ProductTypeRepository { get; set; }
         IStoreRepository StoreRepository { get; set; }
         IBookingRepository BookingRepository { get; set; }

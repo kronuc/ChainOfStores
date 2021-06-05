@@ -13,7 +13,7 @@ namespace ChainOfStores.EFData.UnitOfWork.Realisation.EFRealisation
 {
     public class EFUnitOfWork : IUnitOfWork
     {
-        public IProuductRepository ProductRepository { get; set; }
+        public IProductRepository ProductRepository { get; set; }
         public IProductTypeRepository ProductTypeRepository { get; set; }
         public IStoreRepository StoreRepository { get; set; }
         public IBookingRepository BookingRepository { get; set; }

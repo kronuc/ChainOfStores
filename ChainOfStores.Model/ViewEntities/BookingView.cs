@@ -19,6 +19,7 @@ namespace ChainOfStores.Model.ViewEntities
         }
         public int Id { get; set; }
         public DateTime DataOfBooking { get; set; }
+        public DateTime LastDayOfBooking { get; set; }
         public int ProductID { get; set; }
         public string ClientName { get; set; }
     }

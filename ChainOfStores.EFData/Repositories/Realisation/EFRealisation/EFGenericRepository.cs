@@ -1,4 +1,5 @@
-﻿using ChainOfStores.EFData.Repositories.Inerfaces;
+﻿using ChainOfStores.EFData.Entities;
+using ChainOfStores.EFData.Repositories.Inerfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.EFData.Repositories.Realisation.EFRealisation
 {
-    public class EFGenericRepository<T> : IRepository<T> where T : class
+    public class EFGenericRepository<T, KId> : IRepository<T, KId> where T : BaseEntity<KId>
     {
         protected readonly DbContext _dbContext;
         protected readonly DbSet<T> _entities;
@@ -34,7 +35,7 @@ namespace ChainOfStores.EFData.Repositories.Realisation.EFRealisation
             _entities.Remove(entity);
         }
 
-        public T GetById(int id)
+        public T GetById(KId id)
         {
             return _entities.Find(id);
         }

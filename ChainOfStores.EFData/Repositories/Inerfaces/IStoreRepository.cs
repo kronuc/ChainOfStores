@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.EFData.Repositories.Inerfaces
 {
-    public interface IStoreRepository : IRepository<Store>
+    public interface IStoreRepository : IRepository<Store, int>
     {
     }
 }

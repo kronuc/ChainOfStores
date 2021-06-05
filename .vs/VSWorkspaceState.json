@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ChainOfStores",
+    "\\ChainOfStores.ConsoleView",
+    "\\ChainOfStores.EFData",
+    "\\ChainOfStores.EFData\\Repositories",
+    "\\ChainOfStores.EFData\\Repositories\\Inerfaces",
+    "\\ChainOfStores.EFData\\Repositories\\Realisation",
+    "\\ChainOfStores.EFData\\Repositories\\Realisation\\EFRealisation"
   ],
+  "SelectedNode": "\\ChainOfStores\\ChainOfStores.csproj",
   "PreviewInSolutionExplorer": false
 }

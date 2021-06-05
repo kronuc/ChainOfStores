@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.EFData.Repositories.Inerfaces
 {
-    public interface IBookingRepository : IRepository<Booking>
+    public interface IBookingRepository : IRepository<Booking, int>
     {
     }
 }

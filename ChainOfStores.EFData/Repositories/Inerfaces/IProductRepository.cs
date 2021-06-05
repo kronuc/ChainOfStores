@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.EFData.Repositories.Inerfaces
 {
-    public interface IProuductRepository : IRepository<Product>
+    public interface IProductRepository : IRepository<Product, int>
     {
         IEnumerable<Product> GetProudctsByStore(int storeId);
 

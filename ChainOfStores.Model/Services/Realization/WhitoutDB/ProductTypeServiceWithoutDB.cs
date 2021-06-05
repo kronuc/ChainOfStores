@@ -15,7 +15,7 @@ namespace ChainOfStores.Model.Services.Realization.WhitoutDB
         public ProductTypeServiceWithoutDB()
         {
             _productTypes = new List<ProductTypeView>();
-            //InitialiseData();
+            InitialiseData();
         }
 
 

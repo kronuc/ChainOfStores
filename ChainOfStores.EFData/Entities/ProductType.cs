@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.EFData.Entities
 {
-    public class ProductType
+    public class ProductType : BaseEntity<int>
     {
-        public int Id { get; set; }
         public int ExpirationDate { get; set; }
         public string Name { get; set; }
         public float PriceRecomendation { get; set; }
