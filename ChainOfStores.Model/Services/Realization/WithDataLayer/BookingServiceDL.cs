@@ -17,9 +17,9 @@ namespace ChainOfStores.Model.Services.Realization.WithDataLayer
     {
         private IUnitOfWork _unitOfWork;
 
-        public BookingServiceDL()
+        public BookingServiceDL(IUnitOfWork unitOfWork)
         {
-            _unitOfWork = new EFUnitOfWork();
+            _unitOfWork = unitOfWork;
         }
 
         public void DeleteBooking(int bookingID)

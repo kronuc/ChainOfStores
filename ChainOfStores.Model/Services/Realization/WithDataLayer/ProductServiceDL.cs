@@ -15,9 +15,9 @@ namespace ChainOfStores.Model.Services.Realization.WithDataLayer
     public class ProductServiceDL : IProductService
     {
         private IUnitOfWork _unitOfWork;
-        public ProductServiceDL()
+        public ProductServiceDL(IUnitOfWork unitOfWork)
         {
-            _unitOfWork = new EFUnitOfWork();
+            _unitOfWork = unitOfWork;
             //InitialiseData();
         }
 

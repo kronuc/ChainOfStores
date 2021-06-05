@@ -20,15 +20,15 @@ namespace ChainOfStores.EFData.UnitOfWork.Realisation.EFRealisation
 
         private EFAppDBContext _dBContest;
 
-        public EFUnitOfWork()
+        public EFUnitOfWork(IProductRepository productRepository, IProductTypeRepository productTypeRepository, IStoreRepository storeRepository, IBookingRepository bookingRepository, EFAppDBContext dBContest)
         {
-            _dBContest = new EFAppDBContext();
-            ProductRepository = new EFProductRepository(_dBContest);
-            ProductTypeRepository = new EFProductTypeRepository(_dBContest);
-            StoreRepository = new EFStoreRepository(_dBContest);
-            BookingRepository = new EFBookingRepository(_dBContest);
-            
+            ProductRepository = productRepository;
+            ProductTypeRepository = productTypeRepository;
+            StoreRepository = storeRepository;
+            BookingRepository = bookingRepository;
+            _dBContest = dBContest;
         }
+
         ~EFUnitOfWork()
         {
             _dBContest.Dispose();

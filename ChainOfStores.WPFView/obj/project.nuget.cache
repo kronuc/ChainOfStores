@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O5pTKi2KMvEasNe+m6yLE/4q8Ty2nWPuRTYB9nwxaW8YIctLzw0+zclJfCwasM497619crbOJpiMC5ULMD/8EA==",
+  "dgSpecHash": "+F+VyjNLKKMFbBAqL9sa5HXM+D3txpG81TUebnJYs9oi7VZZO7pcj2uaNYQvp/FeRj8PqZW5qw8O4e5k5WVEiw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kronuc\\source\\repos\\ChainOfStores\\ChainOfStores.WPFView\\ChainOfStores.WPFView.csproj",
+  "projectFilePath": "C:\\Users\\kronuc\\Source\\Repos\\ChainOfStores\\ChainOfStores.WPFView\\ChainOfStores.WPFView.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kronuc\\.nuget\\packages\\abp\\6.3.1\\abp.6.3.1.nupkg.sha512",
     "C:\\Users\\kronuc\\.nuget\\packages\\abp.entityframework\\6.3.1\\abp.entityframework.6.3.1.nupkg.sha512",

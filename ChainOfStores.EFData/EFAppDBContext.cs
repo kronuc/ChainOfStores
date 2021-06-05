@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ChainOfStores.EFData
 {
-    class EFAppDBContext : DbContext
+    public class EFAppDBContext : DbContext
     {
         public EFAppDBContext() : base("chainOfStoresdb")
         {
