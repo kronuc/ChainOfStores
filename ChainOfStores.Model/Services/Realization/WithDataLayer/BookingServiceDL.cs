@@ -40,6 +40,7 @@ namespace ChainOfStores.Model.Services.Realization.WithDataLayer
 
         public void MakeBooking(BookingView booking)
         {
+            booking.LastDayOfBooking = booking.DataOfBooking.AddDays(_unitOfWork.BookingDurationRepository.GetById(1).AmountOfDays);
             _unitOfWork.BookingRepository.Create(BookingMapper.ToDataEntity(booking));
             _unitOfWork.Save();
         }

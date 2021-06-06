@@ -18,5 +18,6 @@ namespace ChainOfStores.EFData
         public DbSet<Store> Stores { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductType> ProductTypes { get; set; }
+        public DbSet<BookingDuration> bookingDuration { get; set; }
     }
 }

@@ -17,15 +17,17 @@ namespace ChainOfStores.EFData.UnitOfWork.Realisation.EFRealisation
         public IProductTypeRepository ProductTypeRepository { get; set; }
         public IStoreRepository StoreRepository { get; set; }
         public IBookingRepository BookingRepository { get; set; }
+        public IBookingDurationRepository BookingDurationRepository { get; set; }
 
         private EFAppDBContext _dBContest;
 
-        public EFUnitOfWork(IProductRepository productRepository, IProductTypeRepository productTypeRepository, IStoreRepository storeRepository, IBookingRepository bookingRepository, EFAppDBContext dBContest)
+        public EFUnitOfWork(IProductRepository productRepository, IProductTypeRepository productTypeRepository, IStoreRepository storeRepository, IBookingRepository bookingRepository, IBookingDurationRepository bookingDurationRepository, EFAppDBContext dBContest)
         {
             ProductRepository = productRepository;
             ProductTypeRepository = productTypeRepository;
             StoreRepository = storeRepository;
             BookingRepository = bookingRepository;
+            BookingDurationRepository = bookingDurationRepository;
             _dBContest = dBContest;
         }
 

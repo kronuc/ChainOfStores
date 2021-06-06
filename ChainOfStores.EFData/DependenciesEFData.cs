@@ -20,6 +20,7 @@ namespace ChainOfStores.EFData
             services.AddScoped<IProductRepository, EFProductRepository>();
             services.AddScoped<IProductTypeRepository, EFProductTypeRepository>();
             services.AddScoped<IBookingRepository, EFBookingRepository>();
+            services.AddScoped<IBookingDurationRepository, EFBookingDurationRepository>();
             services.AddScoped<IUnitOfWork, EFUnitOfWork>();
             return services;
         }

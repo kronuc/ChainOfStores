@@ -14,6 +14,7 @@ namespace ChainOfStores.EFData.UnitOfWork.Interfaces
         IProductTypeRepository ProductTypeRepository { get; set; }
         IStoreRepository StoreRepository { get; set; }
         IBookingRepository BookingRepository { get; set; }
+        IBookingDurationRepository BookingDurationRepository { get; set; }
         void Save();
     }
 }

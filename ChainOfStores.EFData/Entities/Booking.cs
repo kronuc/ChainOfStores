@@ -11,6 +11,7 @@ namespace ChainOfStores.EFData.Entities
         private static int nextId;
 
         public DateTime DataOfBooking { get; set; }
+        public DateTime LastDayOfBooking { get; set; }
         public int ProductID { get; set; }
         public Product Product { get; set; }
         public string ClientName { get; set; }

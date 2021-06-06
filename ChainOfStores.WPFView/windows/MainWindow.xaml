@@ -153,6 +153,7 @@
                                     <GridViewColumn Header="Id" Width="50" DisplayMemberBinding="{Binding Path=Id}"/>
                                     <GridViewColumn Header="Product Id" Width="150" DisplayMemberBinding="{Binding Path=ProductID}"/>
                                     <GridViewColumn Header="Date of booking" Width="150" DisplayMemberBinding="{Binding Path=DataOfBooking}"/>
+                                    <GridViewColumn Header="Last day of booking" Width="150" DisplayMemberBinding="{Binding Path=LastDayOfBooking}"/>
                                     <GridViewColumn Header="Clien Name" Width="150" DisplayMemberBinding="{Binding Path=ClientName}"/>
                                 </GridView>
                             </ListView.View>

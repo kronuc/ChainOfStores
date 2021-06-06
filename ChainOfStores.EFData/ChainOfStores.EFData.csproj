@@ -60,6 +60,7 @@
     <Compile Include="EFAppDBContext.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\Booking.cs" />
+    <Compile Include="Entities\BookingDuration.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\ProductType.cs" />
     <Compile Include="Entities\Store.cs" />
@@ -67,14 +68,24 @@
     <Compile Include="Migrations\202105250815066_AddClientNameMigration.designer.cs">
       <DependentUpon>202105250815066_AddClientNameMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106060536573_add booking duration.cs" />
+    <Compile Include="Migrations\202106060536573_add booking duration.designer.cs">
+      <DependentUpon>202106060536573_add booking duration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106060555073_add last day of booking to booking.cs" />
+    <Compile Include="Migrations\202106060555073_add last day of booking to booking.designer.cs">
+      <DependentUpon>202106060555073_add last day of booking to booking.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\Inerfaces\IBookingDurationRepository.cs" />
     <Compile Include="Repositories\Inerfaces\IBookingRepository.cs" />
     <Compile Include="Repositories\Inerfaces\IProductTypeRepository.cs" />
     <Compile Include="Repositories\Inerfaces\IProductRepository.cs" />
     <Compile Include="Repositories\Inerfaces\IRepository.cs" />
     <Compile Include="Repositories\Inerfaces\IStoreRepository.cs" />
+    <Compile Include="Repositories\Realisation\EFRealisation\EFBookingDurationRepository.cs" />
     <Compile Include="Repositories\Realisation\EFRealisation\EFBookingRepository.cs" />
     <Compile Include="Repositories\Realisation\EFRealisation\EFGenericRepository.cs" />
     <Compile Include="Repositories\Realisation\EFRealisation\EFProductRepository.cs" />
@@ -90,6 +101,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202105250815066_AddClientNameMigration.resx">
       <DependentUpon>202105250815066_AddClientNameMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106060536573_add booking duration.resx">
+      <DependentUpon>202106060536573_add booking duration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106060555073_add last day of booking to booking.resx">
+      <DependentUpon>202106060555073_add last day of booking to booking.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

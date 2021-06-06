@@ -26,3 +26,5 @@ C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.EFData\obj\Debug\ChainO
 C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.EFData\obj\Debug\ChainOfStores.EFData.csproj.GenerateResource.cache
 C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.EFData\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\kronuc\Source\Repos\ChainOfStores\ChainOfStores.EFData\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.EFData\obj\Debug\ChainOfStores.EFData.Migrations.addbookingduration.resources
+C:\Users\kronuc\source\repos\ChainOfStores\ChainOfStores.EFData\obj\Debug\ChainOfStores.EFData.Migrations.addlastdayofbookingtobooking.resources
